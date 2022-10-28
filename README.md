@@ -25,7 +25,7 @@ In this section, we are just document what we are doing as we progress through t
 
 ### Front End (Simon)
 
-
+First thing I have done is implemented a simple stubbed out version (`ConsumptionDataStub`) of the Back End so that I have something to code against.  I cannot wait until Adam has finished before starting what I am doing.  My stubbed out version doesn't have to be pretty, it just needs to return some kind of data so I can produce the graph.  For the moment I am simply returning random value between 10000 and 30000 Wh so I can create a graph in the client.
 
 
 ### Back End (Adam)
