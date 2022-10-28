@@ -18,3 +18,14 @@ We've agreed to use an Exception when the `get_usage_for_range` method cannot re
 * The input range is invalid, e.g. the start date is after the end date.
 
 The client can pro-actively check that it is providing valid data using the `has_usage_for_range` method which returns `True` or `False`
+
+## Development Journal
+
+In this section, we are just document what we are doing as we progress through the imiplementation so you can see the process from two perspectives.
+
+### Front End (Simon)
+
+
+
+
+### Back End (Adam)
