@@ -31,6 +31,8 @@ In this section, we are just document what we are doing as we progress through t
 
 First thing I have done is implemented a simple stubbed out version (`ConsumptionDataStub`) of the Back End so that I have something to code against.  I cannot wait until Adam has finished before starting what I am doing.  My stubbed out version doesn't have to be pretty, it just needs to return some kind of data so I can produce the graph.  For the moment I am simply returning random value between 10000 and 30000 Wh so I can create a graph in the client.
 
+I've then added a Client jupyter notebook that sends a series of requests to the ConsumptionData instance to get a list of consumption values back which are subsequently plotted on a graph. At this stage, the data returned is all dummy data.
+
 ### Back End (Adam)
 
 After we had agreed on the core design, I was able to start coding the abstract base class for the consumption data (`ConsumptionData`) whilst Simon completed the documentation of the contract for our interface. Simon was then able to work separately on the frontend whilst I worked on the backed because we had an established interface to code against.
