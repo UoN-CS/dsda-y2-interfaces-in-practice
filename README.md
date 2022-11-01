@@ -38,3 +38,9 @@ I've then added a Client jupyter notebook that sends a series of requests to the
 After we had agreed on the core design, I was able to start coding the abstract base class for the consumption data (`ConsumptionData`) whilst Simon completed the documentation of the contract for our interface. Simon was then able to work separately on the frontend whilst I worked on the backed because we had an established interface to code against.
 
 To start developing for the backend I need to think about how I can read and process the data. I have created a skeleton of the `ConsumptionDataFile` class and will devise some unit tests to check that my implementation works as expected and per the contract we have agreed on.
+
+I now have implemented the `ConsumptionDataFile` and used `pytest`[^1] to create some simple unit tests using artificial data. This has allowed me to ensure that both code works as intended and the interface contract we defined is upheld for a variety of inputs. Now that the backend has been put together, the frontend can be adjusted to use the real data.
+
+Because of the way we designed our interface, Simon was been able to simultaneously work on this whilst I worked on the backend. He has created the client notebook (`Client.ipynb`) which already works and presents data visually. I have now only had to make very small changes to this file in order to use the real data - essentially changing the code from using the `ConsumptionDataStub` to the `ConsumptionDataFile` object.
+
+[^1]: Test functions with names starting with `test` can be run from the command line with `pytest consumption_data.py`. See [the documentation](https://pypi.org/project/pytest/) for more details
